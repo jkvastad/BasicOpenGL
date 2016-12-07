@@ -15,15 +15,14 @@ void init(SDL_Window*& window) {
 	//swap buffer at the monitors rate
 	SDL_GL_SetSwapInterval(1);
 
-	//GLEW is an OpenGL Loading Library used to reach GL functions
-	//Sets all functions available
+	//Sets all GLEW functions available
 	glewExperimental = GL_TRUE;
 	glewInit();
 }
 
 /*
-Call before creating a GL context to set attributes
-Used by init
+Call before creating a GL context to set attributes.
+Used by init.
 */
 void initGLAttributes(int glMajorVersion, int glMinorVersion, int useDoubleBuffering) {
 	//Disable deprecated functions
@@ -38,10 +37,8 @@ void initGLAttributes(int glMajorVersion, int glMinorVersion, int useDoubleBuffe
 /*
 Call when program is done
 */
-void tearDown(SDL_Window*& window) {
+void GLTearDown(SDL_Window*& window) {
 	SDL_GL_DeleteContext(window);
 	SDL_DestroyWindow(window);
-
-	// Clean up SDL
 	SDL_Quit();
 }
