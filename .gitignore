@@ -4,6 +4,7 @@
 # User-specific files
 *.suo
 *.user
+!BasicMVCProject.vcxproj.user
 *.userosscache
 *.sln.docstates
 
