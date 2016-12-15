@@ -76,7 +76,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>..\..\Libraries\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;..\..\Libraries\glew-2.0.0-win32\glew-2.0.0\include\GL;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\Libraries\glew-2.0.0-win32\glew-2.0.0\lib\Release\x64;..\..\Libraries\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\Libraries\glew-2.0.0-win32\glew-2.0.0\lib\64-bit;..\..\Libraries\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\64-bit;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
